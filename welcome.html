@@ -1,0 +1,59 @@
+<!-- Joshua Ledesma welcome page -->
+
+<DOCTYPE! HTML>
+<html>
+<head>
+<div style="background-color:transparent; z-index: 2; position:absolute;">
+<a href="welcome.html" target="rightframe">
+<img src="logo.png" height="175px" width="400px" style="float:left;">
+</a>
+<a href="classes.html" target="rightframe">
+<p style="font-family:Lucida Bright; color:#5F8C91; padding-top:10px; font-size:30px; padding-right:100px;float:left;"><b>Classes</b></p>
+</a>
+<a href="signup.html" target="rightframe">
+<p style="font-family:Lucida Bright; color:#5F8C91; padding-top:10px; font-size:30px;float:left;"><b>Sign Up</b></p>
+</a>
+</div>
+
+<script>
+var imgArray = new Array(4);
+var index = 0;
+
+function cycle()
+{
+	document.banner.src = imgArray[index].src;
+	index++;
+	if (index > 3)
+	{
+		index=0;
+	}
+	setTimeout("cycle()",5000);
+	return;
+}
+
+function startup()
+{
+	imgArray[0] = new Image;
+	imgArray[0].src = "gif1.jpg";
+	imgArray[1] = new Image;
+	imgArray[1].src = "gif2.gif";
+	imgArray[2] = new Image;
+	imgArray[2].src = "gif3.gif";
+	imgArray[3] = new Image;
+	imgArray[3].src = "gif4.gif";
+	cycle();
+	return;
+}
+</script>
+</head>
+<body style="background:white; margin:0;" onLoad="startup()">
+<img name="banner" src="/bbcswebday/xid-138/504470_1" height="450px" width="70%" style="display:block; margin-left:auto; margin-right:auto;">
+<div>
+<img src="firstsquare.jpg" height="400px" width="33%">
+<img src="secondsquare.jpg" height="400px" width="33%">
+<img src="thirdsquare.jpg" height="400px" width="33%">
+
+</div>
+
+</body>
+</html>

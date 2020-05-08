@@ -1,0 +1,120 @@
+<!-- Joshua Ledesma
+Signup
+-->
+
+
+<DOCTYPE! HTML>
+<HTML>
+<head>
+<script>
+function ValidateForm()
+{
+	if (document.forms["membership"]["firstn"].value==null || document.forms["membership"]["firstn"].value=="")
+		{
+			alert("Please enter your first name.");
+			return false;
+		}
+	if (document.forms["membership"]["lastn"].value==null || document.forms["membership"]["lastn"].value=="")
+		{
+			alert("Please enter your last name.");
+			return false;
+		}
+	if (document.forms["membership"]["email"].value==null || document.forms["membership"]["email"].value=="")
+		{
+			alert("Please enter your email.");
+			return false;
+		}
+	if (document.forms["membership"]["cemail"].value==null || document.forms["membership"]["cemail"].value=="")
+		{
+			alert("Please confirm your email.");
+			return false;
+		}
+	if (document.forms["membership"]["cemail"].value != document.forms["membership"]["email"].value)
+		{
+			alert("Email address doesn't match.");
+			return false;
+		}
+	if (document.forms["membership"]["address"].value==null || document.forms["membership"]["address"].value=="")
+		{
+			alert("Please enter your address.");
+			return false;
+		}
+	if (document.forms["membership"]["city"].value==null || document.forms["membership"]["city"].value=="")
+		{
+			alert("Please enter your city.");
+			return false;
+		}
+	if (document.forms["membership"]["state"].value==null || document.forms["membership"]["state"].value=="")
+		{
+			alert("Please enter your state.");
+			return false;
+		}
+	if (document.forms["membership"]["zip"].value==null || document.forms["membership"]["zip"].value=="")
+		{
+			alert("Please enter your zip code.");
+			return false;
+		}
+	if (document.forms["membership"]["birthday"].value==null || document.forms["membership"]["birthday"].value=="")
+		{
+			alert("Please enter your birth date.");
+			return false;
+		}
+	if (document.forms["membership"]["gender"].value==null || document.forms["membership"]["gender"].value=="")
+		{
+			alert("Please select your gender.");
+			return false;
+		}
+	if(document.forms["membership"]["phone"].value==null || document.forms["membership"]["phone"].value=="")
+		{  
+			alert("Please enter your phone number.")
+			return false;
+		}
+
+	return true;
+}
+</script>
+
+
+<div style="float:left;">
+<a href="welcome.html" target="rightframe">
+<img src="logo.png" height="150px" width="400px" style="float:left;">
+</a>
+<a href="classes.html" target="rightframe">
+<p style="font-family:Lucida Bright; color:#5F8C91; padding-top:10px; font-size:30px; padding-right:100px;float:left;"><b>Classes</b></p>
+</a>
+<a href="signup.html" target="rightframe">
+<p style="font-family:Lucida Bright; color:#5F8C91; padding-top:10px; font-size:30px;float:left;"><b>Sign Up</b></p>
+</a>
+<a href="Membership.html" target="rightframe">
+<p style="font-family:Lucida Bright; color:#5F8C91; padding-top:10px; font-size:30px; padding-left:100px;float:left;"><b>Membership Types</b></p>
+</a>
+</div>
+<hr color="#5F8C91" width="95%">
+</head>
+<body>
+<div style="background:#5F8C91">
+</br>
+<form style="text-align: center;" name="membership" action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post" onsubmit="return ValidateForm()">
+First Name:</br><input type="text" name="firstn"/></br>
+Last Name:</br> <input type="text" name="lastn"/></br>
+Email:</br> <input type="text" name="email"/></br>
+Confrim Email:</br> <input type="text" name="cemail"/></br>
+Address: </br><input type="text" name="address"/></br></br>
+City:<input type="text" name="city"/> &nbsp;
+State:<input type="text" name="state"/> &nbsp;
+Zip:<input type="text" name="zip"/></br>
+Phone #: </br><input type="text" name="phone"/></br>
+Birthday: </br><input type="text" name="birthday"/></br>	
+Gender:</br> <select name="gender"/></br>
+<option>Please Select<option>
+<option>Male</option>
+<option>Female</option>
+</select></br>
+</br>
+<input type="submit" value="Click here to submit"> &nbsp;&nbsp;
+<input type="reset" value="Start Over">
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+</div>
+</form>
+</body>
+<HTML>

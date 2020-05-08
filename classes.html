@@ -1,0 +1,227 @@
+
+<!--Classes Page-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Classes</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style>
+body {
+	margin:0;
+}
+
+p.menuClass:hover {	
+	background-color: #4CAF50;
+}
+
+p.menuClass {	
+	font-family:Lucida Bright; 
+	color:#5F8C91; 
+	background-color: #d6d6d6;
+	padding: 10px 30px;
+	font-size:30px;
+	float:right;
+}
+
+.back-to-top {
+    background-color: #d6d6d6;
+    color: #5F8C91;
+	display: none;
+    z-index: 10000000;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+.back-to-top:hover {
+	background-color: #4CAF50;
+}
+
+a.back-to-top {
+	font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6;
+    padding-left: 2px;
+    padding-top: 15px;    
+}
+</style>
+
+</head>
+<body>
+
+<a href="#top" class="back-to-top"><span class="arrow">Top</span></a>
+
+<script>
+var aScroll = 300;
+
+$(window).scroll(function() {
+    if ( $(window).scrollTop() > aScroll ) {
+        $('a.back-to-top').fadeIn('slow');
+    } else {
+        $('a.back-to-top').fadeOut('slow');
+    }
+});
+
+$('a.back-to-top').click(function() {
+    $('html, head, body').animate({
+        scrollTop: 0
+    }, 700);
+    return false;
+});
+</script>
+
+<hr color="#5F8C91" size="60px" style="padding:0px; margin:auto;">
+<div style="float:left;">
+<a href="index.html" target="rightframe">
+<img src="logo.png" height="150px" width="400px" style="float:left;">
+</a>
+<a href="classes.html" target="rightframe">
+<p style="font-family:Lucida Bright; color:#5F8C91; padding-top:10px; font-size:30px; padding-right:100px;float:left;"><b>Classes</b></p>
+</a>
+<a href="signup.html" target="rightframe">
+<p style="font-family:Lucida Bright; color:#5F8C91; padding-top:10px; font-size:30px;float:left;"><b>Sign Up</b></p>
+</a>
+<a href="membership.html" target="rightframe">
+<p style="font-family:Lucida Bright; color:#5F8C91; padding-top:10px; font-size:30px; padding-left:100px;float:left;"><b>Membership Types</b></p>
+</a>
+</div>
+<hr color="#5F8C91" width="95%" size="5px">
+
+
+<div style="width:90%; text-align: center; margin:auto; ">
+<a href="#kickboxing">
+<p class="menuClass"><b>Kickboxing</b></p>
+</a>
+<a href="#cardio">
+<p class="menuClass"><b>Cardio</b></p>
+</a>
+<a href="#crossfit">
+<p class="menuClass"><b>Crossfit</b></p>
+</a>
+<a href="#boxing">
+<p class="menuClass"><b>Boxing</b></p>
+</a>
+<a href="#weight">
+<p class="menuClass"><b>Weight</b></p>
+</a>
+<a href="#yoga">
+<p class="menuClass"><b>Yoga</b></p>
+</a>
+<a href="#meditation">
+<p class="menuClass"><b>Meditation</b></p>
+</a>
+</div>
+
+<hr color="#5F8C91" width="95%">
+<br><br>
+
+<div id="kickboxing" style="background:#5F8C91;">
+<br>
+<img src="kickboxing.jpg" style="float:left;padding-left:20px; padding-right:175px" width="40%" height="300px">
+<p>
+	<h1 style="color:white; font-family:impact;">
+		<b>Are you Ready to start kicking?</b></h1>
+		
+	<ul style="color:white;align:center;"><br>
+		<li>Looking to tone up your quads?</li><br>
+		<li>Feel free to join our kickboxing classes with our certified instructors</li><br>
+		<li>We offer daily morning and afternoon sessions</li><br>
+<br><br><br><br><br><br><br>
+	</ul>
+</p>
+</div>
+<br><br><br><br>
+<div id="cardio" style="background:#5F8C91;">
+<br>
+<img src="cardio.jpg" style="float:right;padding-left:20px; padding-right:175px" width="40%" height="300px">
+<p><h1 style="color:white; font-family:impact;"><b>Looking to burn some calories?</b></h1>
+<ul style="color:white;"><br>
+<li> Join us for our instuctor led cardio sessions </li><br>
+<li> We'll keep you motivated and energized while losing those few pounds!</li><br>
+<li> We also offer cardio exercise sessions with our instuctors in a multipurpose room</li><br>
+<br><br><br><br><br><br><br>
+</ul>
+</div>
+<br><br><br><br>
+<div id="crossfit" style="background:#5F8C91;">
+<br>
+<img src="crossfit.jpg" style="float:left;padding-left:20px; padding-right:175px" width="40%" height="300px">
+<p><h1 style="color:white; font-family:impact;"><b>Are you looking to gain muscle while losing weight?</b></h1>
+<ul style="color:white;"><br>
+<li>Crossfit workouts are the perfect workout for you</li><br>
+<li>Our sessions cover a range of exercises from burpes to hanging knee sit-ups</li><br>
+<li> We guarantee you'll be looking great within 2 months!</li><br>
+<br><br><br><br><br><br><br>
+</ul>
+</p>
+</div>
+<br><br><br><br>
+<div id="boxing" style="background:#5F8C91;">
+<br>
+<img src="boxing.jpg" style="float:right;padding-left:20px; padding-right:175px" width="40%" height="300px">
+<p><h1 style="color:white; font-family:impact;"><b>Feel like punching someone after a long day?</b></h1>
+<ul style="color:white;"><br>
+<li> Our Boxing sessions will help improve your reflexes while burning fat and increasing muscle tone</li><br>
+<li>Boxing is a great stress reliever </li><br>
+<li> You'll get the benefits of a great workout while enjoying it</li><br>
+<br><br><br><br><br><br><br>
+</ul>
+</p>
+</div>
+<br><br><br><br>
+<div id="weight" style="background:#5F8C91;">
+<br>
+<img src="weight.jpg" style="float:left;padding-left:20px; padding-right:175px" width="40%" height="300px">
+<p><h1 style="color:white; font-family:impact;"><b>Are you looking to get bigger guns?</b></h1>
+<ul style="color:white;"><br>
+<li>At Knockout we offer different levels of weight training depending on your ability</li><br>
+<li>We offer weight training classes daily in the morning and afternoons</li><br>
+<li> We guarantee you'll get the girl of your dreams if you join this class! </li><br>
+<br><br><br><br><br><br><br>
+</ul>
+</p>
+</div>
+<br><br><br><br>
+<div id="yoga" style="background:#5F8C91;">
+<br>
+<img src="yoga.jpg" style="float:right;padding-left:100px; padding-right:100px" width="40%" height="300px">
+<p><h1 style="color:white; font-family:impact;"><b>Looking to relax after a long work week?</b></h1>
+<ul style="color:white;"><br>
+<li>Yoga us a great stress reliever</li><br>
+<li> Yoga increases your flexibility and cardiovascular health</li><br>
+<li>Yoga has been linked to increased athletic ability</li><br>
+<br><br><br><br><br><br><br>
+</ul>
+</p>
+</div>
+<br><br><br><br>
+<div id="meditation" style="background:#5F8C91;">
+<br>
+<img src="meditation.jpg" style="float:left;padding-left:20px; padding-right:175px" width="40%" height="300px">
+<p><h1 style="color:white; font-family:impact;"><b>Looking for a new form of relaxation?</b></h1>
+<ul style="color:white;"><br>
+<li> Meditation is a great way to imrove your ability to conentrate</li><br>
+<li> Great way to relieve stress</li><br>
+<li> Increases self awareness</li><br>
+<br><br><br><br><br><br><br>
+</ul>
+</p>
+</div>
+
+<script>
+    $(document).ready(function(){ 
+    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+   }); 
+</script>
+<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_keronhaywood1290&amp;utm_content=footer_img"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"  alt="www.000webhost.com"></a></div></body>
+</html>
